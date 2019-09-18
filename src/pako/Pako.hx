@@ -13,7 +13,7 @@ import haxe.extern.EitherType;
 
 typedef Dictionary = EitherType<Uint8Array, EitherType<ArrayBuffer, String>>;
 
-@:native('pako')
+@:jsRequire('pako')
 extern class Pako {
 
 	static public var Z_BEST_COMPRESSION:Int;
